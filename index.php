@@ -26,14 +26,18 @@
 
         //prints out all keys and of the json in table format
         foreach($data as $item) {
-            echo '<table><tr><th>Key</th><th>Type</th></tr>';
+            echo '<table><tr><th>Key</th><th>Type</th><th>Edit</th></tr>';
             foreach($item as $key => $value) {
                 echo '<tr><td>'.$key.'</td>';
                 foreach($value as $valuekey => $valuevalue)
-                echo '<td>'.$valuevalue.'</td></tr>';
+                echo '<td>'.$valuevalue.'</td><td><button>Edit</button></td></tr>';
             }
             echo '</table>';
         }
+        echo '<h1>'.$data["attributes"]["id"]["type"].'</h1>';
+        $data["attributes"]["id"]["type"] = "integer";
+        $updatedData = json_encode($data);
+        file_put_contents('example.json', $updatedData);
     ?>
     
 </body>

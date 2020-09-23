@@ -1,1 +1,23 @@
-{"attributes":{"id":{"type":"integer"},"name":{"type":"string"},"account":{"type":"select","options":["guest","member","admin"]},"email":{"type":"email"},"balance":{"type":"float"},"created_at":{"type":"datetime"}}}
+{
+  "attributes": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "account": {
+      "type": "select",
+      "options": ["guest","member", "admin"]
+    },
+    "email": {
+      "type": "email"
+    },
+    "balance": {
+      "type": "float"
+    },
+    "created_at": {
+      "type": "datetime"
+    }
+  }
+}

@@ -24,6 +24,12 @@ function save() {
   ).value;
 }
 
+//delete row
+function deleteRow() {
+  let deleteButton = document.getElementById("delete-button");
+  table.deleteRow(deleteButton.dataset.id);
+}
+
 // function getData(str) {
 //   $.ajax({
 //     url: "example.json",

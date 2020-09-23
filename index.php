@@ -59,7 +59,7 @@
                     }
                 }
             echo $valuetd.
-                '<td><button id="delete-button" data-id="'.$rownumber.'">Delete</button></td>
+                '<td><button onclick="deleteRow();" id="delete-button" data-id="'.$rownumber.'">Delete</button></td>
                 </tr>';
         }
     }

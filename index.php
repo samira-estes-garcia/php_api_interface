@@ -32,6 +32,7 @@
             <th>Row Number</th>
             <th>Key</th>
             <th>Data Type</th>
+            <th>Delete</th> 
         </tr>
 
     <?php
@@ -58,7 +59,8 @@
                     }
                 }
             echo $valuetd.
-                '</tr>';
+                '<td><button id="delete-button" data-id="'.$rownumber.'">Delete</button></td>
+                </tr>';
         }
     }
     ?>

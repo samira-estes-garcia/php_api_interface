@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
       ).value = this.cells[2].innerHTML;
     };
   }
-
-  //save selected row after edit
-  function save() {
-    table.rows[rIndex].cells[2].innerHTML = document.getElementById(
-      "data-type-output"
-    ).value;
-  }
 });
+
+//save selected row after edit
+function save() {
+  table.rows[rIndex].cells[2].innerHTML = document.getElementById(
+    "data-type-output"
+  ).value;
+}
 
 // function getData(str) {
 //   $.ajax({

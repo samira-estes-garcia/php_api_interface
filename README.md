@@ -6,3 +6,8 @@ Task:
 - Button to add new attribute
 - CRUD attributes (update datatype)
 - Submission validations
+
+To Use:
+
+- Clone down and insert .json file into \$url in index.php
+- Start php light server php -S localhost:8000
